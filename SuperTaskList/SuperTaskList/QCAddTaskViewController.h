@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "QCCustomCell.h"
 
 @interface QCAddTaskViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UIButton *addTaskButton;
+- (IBAction)addTaskButtonPressed:(UIButton *)sender;
 
 @end

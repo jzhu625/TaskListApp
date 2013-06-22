@@ -61,20 +61,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
-    
-    
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return [self.tasksArray count];
     
 }
 
-- (UITableViewCell *)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-   
+- (UITableViewCell *)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     
+  static NSString *cellId = @"Cell";
+    QCCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil){
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"QCCustomCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+
 }
-
-
 
 
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "QCAddTaskViewController.h"
-
+#import "QCCustomCell.h"
 
 
 @interface QCViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
