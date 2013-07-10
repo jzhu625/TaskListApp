@@ -29,10 +29,7 @@
     // Do any additional setup after loading the view from its nib.
     self.taskTextField.delegate=self;
     self.dateDueTextField.delegate=self;
-    
-    git remote set-url origin https://arntzel@github.com/project/acontero/TaskListApp.git
-    https://github.com/acontero/TaskListApp.git
-    
+
     UIBarButtonItem *saveButton = [[UIBarButtonItem alloc]initWithTitle:@"Save" style:(UIBarButtonItemStyleBordered) target:self action:@selector(saveButtonPressed:)];
     
     self.navigationItem.rightBarButtonItem = saveButton;
