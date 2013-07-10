@@ -8,9 +8,6 @@
 
 #import "QCAddTaskViewController.h"
 
-
-
-
 @interface QCAddTaskViewController ()
 
 @end
@@ -68,8 +65,8 @@
     Tasks *task = [Tasks createEntity];
     task.taskdescription=self.taskTextField.text;
     task.duedate=22;
-    
-//    [[NSManagedObjectContext contextForCurrentThread] saveToPersistentStoreAndWait];
+
+    [[NSManagedObjectContext contextForCurrentThread] saveToPersistentStoreAndWait];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

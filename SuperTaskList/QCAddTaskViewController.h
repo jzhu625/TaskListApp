@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "QCCustomCell.h"
 #import "SubtasksListViewController.h"
+#import "Tasks.h"
 
 @interface QCAddTaskViewController : UITableViewController
 <UITextFieldDelegate>
