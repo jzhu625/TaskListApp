@@ -10,9 +10,10 @@
 #import "QCCustomCell.h"
 #import "TasksViewController.h"
 #import "Tasks.h"
+#import "CategoryViewController.h"
 
 @interface EditTaskViewController : UITableViewController
-<UITextFieldDelegate>
+<UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *dueDateCell;

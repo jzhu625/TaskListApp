@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="4rp-rf-c0p" customClass="QCToDoListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UZo-kM-6Tk">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xHh-x2-qlD">
@@ -188,7 +188,7 @@
             <objects>
                 <tableViewController id="0IH-Xx-tah" customClass="EditTaskViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7e2-Jj-LwQ">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Task Description here:" id="Bxk-w6-Cj6">
@@ -287,7 +287,7 @@
                                             <constraint firstItem="XiR-ID-98f" firstAttribute="top" secondItem="y3L-Kd-ULX" secondAttribute="top" constant="11" id="kho-Vt-inO"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="FyN-j0-6gM" kind="push" id="D2R-dc-xbf"/>
+                                            <segue destination="FyN-j0-6gM" kind="push" id="Q3E-xe-A2w"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -317,7 +317,7 @@
             <objects>
                 <viewController id="iZr-7A-gan" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ud-tW-EDF">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nTD-Iq-yeR">
@@ -400,7 +400,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <viewController id="5wB-Rh-6xb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MsK-sR-ga8">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-K4-5qo">
@@ -480,7 +480,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <viewController id="FyN-j0-6gM" customClass="CategoryViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4gA-Bm-Fmg">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="okb-Gb-GVA">
@@ -504,17 +504,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="ChJ-YK-qh2">
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Eb-Ix-NVe">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="355" id="dsN-yU-yfb"/>
+                                    <constraint firstAttribute="height" constant="375" id="nMb-I5-13C"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="jof-1L-E52">
@@ -526,23 +519,27 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="ChJ-YK-qh2">
+                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Eb-Ix-NVe" firstAttribute="top" secondItem="4gA-Bm-Fmg" secondAttribute="top" constant="20" symbolic="YES" type="default" id="3Gl-uQ-2HL"/>
-                            <constraint firstItem="ChJ-YK-qh2" firstAttribute="trailing" secondItem="4gA-Bm-Fmg" secondAttribute="trailing" type="default" id="DdN-d3-2X7"/>
+                            <constraint firstItem="3Eb-Ix-NVe" firstAttribute="top" secondItem="4gA-Bm-Fmg" secondAttribute="top" type="default" id="08a-fq-E7d"/>
                             <constraint firstItem="okb-Gb-GVA" firstAttribute="baseline" secondItem="9RJ-8h-bcM" secondAttribute="baseline" type="default" id="FiV-Bg-8vS"/>
                             <constraint firstItem="3Eb-Ix-NVe" firstAttribute="trailing" secondItem="4gA-Bm-Fmg" secondAttribute="trailing" type="default" id="IOD-FN-JnX"/>
                             <constraint firstAttribute="bottom" secondItem="9RJ-8h-bcM" secondAttribute="bottom" constant="80" id="Kqk-5Z-M4s"/>
-                            <constraint firstItem="ChJ-YK-qh2" firstAttribute="top" secondItem="4gA-Bm-Fmg" secondAttribute="top" type="default" id="Wpm-tL-1HN"/>
                             <constraint firstItem="9RJ-8h-bcM" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" constant="6" id="ZFe-gm-30V"/>
                             <constraint firstItem="3Eb-Ix-NVe" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" type="default" id="ZJ3-hT-YBq"/>
                             <constraint firstItem="okb-Gb-GVA" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" constant="103" id="c8J-VU-XTg"/>
-                            <constraint firstAttribute="bottom" secondItem="ChJ-YK-qh2" secondAttribute="bottom" constant="460" id="d6O-Yo-aC6"/>
                             <constraint firstItem="9RJ-8h-bcM" firstAttribute="top" secondItem="okb-Gb-GVA" secondAttribute="top" type="default" id="xd9-FQ-O4n"/>
-                            <constraint firstItem="ChJ-YK-qh2" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" type="default" id="y0A-Gt-mE7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="tlT-Ej-cba">
@@ -551,7 +548,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZW-xU-b0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="-408"/>
+            <point key="canvasLocation" x="1964" y="-402"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mlQ-s5-qhY">
@@ -564,19 +561,19 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4rp-rf-c0p" kind="relationship" relationship="rootViewController" id="f1Z-nm-OV3"/>
+                        <segue destination="0IH-Xx-tah" kind="relationship" relationship="rootViewController" id="hLw-9V-8Qi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90M-cp-2Tt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="-831"/>
+            <point key="canvasLocation" x="148" y="-813"/>
         </scene>
     </scenes>
     <resources>
         <image name="checkboxblank.jpeg" width="225" height="225"/>
     </resources>
     <classes>
-        <class className="CategoryViewController" superclassName="UITableViewController">
+        <class className="CategoryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CategoryViewController.h"/>
         </class>
         <class className="EditTaskViewController" superclassName="UITableViewController">

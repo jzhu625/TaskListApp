@@ -15,7 +15,7 @@
 @interface TasksViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *taskTableView;
-@property (strong, nonatomic) NSMutableArray * tasksArray;
+@property (strong, nonatomic) NSArray * tasksArray;
 - (IBAction)addTaskButtonPressed:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UIButton *addTaskButton;
 @property (strong, nonatomic) IBOutlet UITextField *textLabel;

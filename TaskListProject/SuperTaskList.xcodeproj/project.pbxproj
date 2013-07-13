@@ -21,7 +21,6 @@
 		3351A5ED176E3983006AFF83 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3351A5EC176E3983006AFF83 /* CoreData.framework */; };
 		3351A793176E3D7A006AFF83 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */; };
 		3351A874176E48A0006AFF83 /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351A872176E48A0006AFF83 /* EditTaskViewController.m */; };
-		3351A875176E48A0006AFF83 /* EditTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3351A873176E48A0006AFF83 /* EditTaskViewController.xib */; };
 		6FA94E68178DB0B400BE7EB7 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E30178DB0B400BE7EB7 /* MagicalImportFunctions.m */; };
 		6FA94E69178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E32178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.m */; };
 		6FA94E6A178DB0B400BE7EB7 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E34178DB0B400BE7EB7 /* NSEntityDescription+MagicalDataImport.m */; };
@@ -85,7 +84,6 @@
 		3351A792176E3D7A006AFF83 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3351A871176E489F006AFF83 /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
 		3351A872176E48A0006AFF83 /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
-		3351A873176E48A0006AFF83 /* EditTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditTaskViewController.xib; sourceTree = "<group>"; };
 		6FA94E2F178DB0B400BE7EB7 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		6FA94E30178DB0B400BE7EB7 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		6FA94E31178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 			children = (
 				3351A871176E489F006AFF83 /* EditTaskViewController.h */,
 				3351A872176E48A0006AFF83 /* EditTaskViewController.m */,
-				3351A873176E48A0006AFF83 /* EditTaskViewController.xib */,
 				7F48B8311771404A008BC001 /* CustomCell */,
 			);
 			name = "Edit Task View Controller";
@@ -501,7 +498,6 @@
 				3351A5DE176E3951006AFF83 /* Default@2x.png in Resources */,
 				3351A5E0176E3951006AFF83 /* Default-568h@2x.png in Resources */,
 				3351A5E6176E3951006AFF83 /* SubtasksListViewController.xib in Resources */,
-				3351A875176E48A0006AFF83 /* EditTaskViewController.xib in Resources */,
 				7F48B83017714032008BC001 /* QCCustomCell.xib in Resources */,
 				7FC0CA3317764D7700220AF9 /* QCSettingsViewController.xib in Resources */,
 				7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */,

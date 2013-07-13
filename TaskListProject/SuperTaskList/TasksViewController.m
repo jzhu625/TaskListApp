@@ -30,7 +30,7 @@
 - (void) viewDidAppear:(BOOL) animated
 {
     [super viewDidAppear:YES];
-//    self.tasksArray = [[NSMutableArray alloc] initWithArray:[Tasks findAll]];
+    self.tasksArray = [Tasks findAll];
 //
     //After we setup our "Data source" we call the method reload on our tableView object so that the tableview will properly display the appropraite information.
     [self.taskTableView reloadData];
@@ -152,7 +152,8 @@
 {
         Tasks *task = [Tasks createEntity];
         task.taskTitle = self.textLabel.text;
-    [self.tasksArray addObject:self.textLabel.text];
+   // [self.tasksArray addObject:self.textLabel.text];
+    self.tasksArray = [Tasks findAll];
  
     
         [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
