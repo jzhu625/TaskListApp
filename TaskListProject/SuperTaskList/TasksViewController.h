@@ -7,15 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "QCAddTaskViewController.h"
+#import "EditTaskViewController.h"
 #import "QCCustomCell.h"
 #import "Tasks.h"
 
 
-@interface SubtasksListViewController : UITableViewController
+@interface TasksViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *taskTableView;
 @property (strong, nonatomic) NSMutableArray * tasksArray;
+- (IBAction)addTaskButtonPressed:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIButton *addTaskButton;
+@property (strong, nonatomic) IBOutlet UITextField *textLabel;
+
 
 
 @end
