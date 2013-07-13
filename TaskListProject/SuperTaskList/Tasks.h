@@ -2,7 +2,7 @@
 //  Tasks.h
 //  SuperTaskList
 //
-//  Created by Eliot Arntz on 7/10/13.
+//  Created by Donysa Vacharasanee on 7/13/13.
 //  Copyright (c) 2013 self.edu. All rights reserved.
 //
 
@@ -14,5 +14,7 @@
 
 @property (nonatomic) NSTimeInterval duedate;
 @property (nonatomic, retain) NSString * taskdescription;
+@property (nonatomic) NSTimeInterval reminder;
+@property (nonatomic, retain) NSManagedObject *list;
 
 @end
