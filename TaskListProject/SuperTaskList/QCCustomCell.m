@@ -10,6 +10,10 @@
 
 @implementation QCCustomCell
 
+
+@synthesize checkBoxButton;
+
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -55,8 +59,23 @@
 //        [checkbox setSelected:checkboxSelected];
 //    }
     
-                      
-                      
+    checked = NO;
+    
 }
                       
+- (IBAction)checkBoxButton:(id)sender {
+    
+    if (!checked) {
+        [checkBoxButton setImage: [UIImage imageNamed:@"checkboxblack.jpeg"] forState:UIControlStateNormal];
+         checked = YES;
+    
+             
+         }
+    else if (checked) {
+         [checkBoxButton setImage: [UIImage imageNamed:@"checkboxcecked.jpeg"] forState:UIControlStateNormal];
+        checked = NO;
+        
+    }
+}
+
 @end

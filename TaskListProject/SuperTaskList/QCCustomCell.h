@@ -13,10 +13,10 @@
 @interface QCCustomCell : UITableViewCell{
     BOOL checked;
 }
+@property (strong, nonatomic) IBOutlet UIButton *checkBoxButton;
 
-- (IBAction)checkboxButton:(UIButton *)sender;
-@property (strong, nonatomic) IBOutlet UIButton *checkBox;
-
-@property (strong, nonatomic) IBOutlet UILabel *taskNameLabel;
-
+- (IBAction)checkBoxButton:(id)sender;
+    
+    
+    
 @end

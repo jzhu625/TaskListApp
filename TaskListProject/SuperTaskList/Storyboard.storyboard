@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="S3h-HL-6Yw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="S3h-HL-6Yw">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -189,11 +189,11 @@
                         <constraints>
                             <constraint firstItem="CGH-Lf-NB6" firstAttribute="centerX" secondItem="1sD-NQ-eMN" secondAttribute="centerX" type="default" id="9dl-ej-xve"/>
                             <constraint firstItem="CGH-Lf-NB6" firstAttribute="top" secondItem="1sD-NQ-eMN" secondAttribute="top" constant="62" id="Fuf-AA-W22"/>
+                            <constraint firstItem="nYB-ii-a5O" firstAttribute="leading" secondItem="CGH-Lf-NB6" secondAttribute="leading" type="default" id="Qsg-26-5dr"/>
                             <constraint firstItem="53f-Dm-rJ2" firstAttribute="leading" secondItem="1sD-NQ-eMN" secondAttribute="leading" constant="112" id="Rnm-if-aVi"/>
                             <constraint firstItem="nYB-ii-a5O" firstAttribute="top" secondItem="1sD-NQ-eMN" secondAttribute="top" constant="12" id="TcC-8b-dJ3"/>
                             <constraint firstItem="53f-Dm-rJ2" firstAttribute="top" secondItem="nYB-ii-a5O" secondAttribute="top" type="default" id="Uhc-xR-As4"/>
                             <constraint firstItem="53f-Dm-rJ2" firstAttribute="baseline" secondItem="nYB-ii-a5O" secondAttribute="baseline" type="default" id="a2J-gz-vte"/>
-                            <constraint firstItem="nYB-ii-a5O" firstAttribute="leading" secondItem="1sD-NQ-eMN" secondAttribute="leading" constant="8" id="jdz-0X-btT"/>
                         </constraints>
                     </view>
                 </viewController>
