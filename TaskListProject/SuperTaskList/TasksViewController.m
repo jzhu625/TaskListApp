@@ -78,11 +78,15 @@
 //            
 //            UITableViewCell *cell = (UITableViewCell *) [taskTableView dequeueReusableCellWithIdentifier:Cellidentifier];
 //            
-//            if (cell == nil) {
-//                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:Cellidentifier];
+    
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-                cell.textLabel.text = [self.tasksArray objectAtIndex:indexPath.row];
-                return cell;
+                
+    if (cell == nil) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    }
+    
+    cell.textLabel.text = [[self.tasksArray objectAtIndex:indexPath.row] taskTitle];
+    return cell;
             
 
         //DV NOT sure about the following code
@@ -97,10 +101,15 @@
 
 
 //implement this method to allow users to tap on rows
-- (void)taskTableView:(UITableView *)taskTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //After the user touches the row, deselect the row
-    [taskTableView deselectRowAtIndexPath:indexPath animated:NO];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    EditTaskViewController *editTaskVC = [[EditTaskViewController alloc] initWithNibName:nil bundle:nil];
+    editTaskVC.editTasksScreen = [self.tasksArray objectAtIndex:indexPath.row];
+                                  
+    [self.navigationController pushViewController:editTaskVC animated:YES];
     
 //    Tasks *taskTitle = [self.tasksArray objectAtIndex:indexPath.row];
     

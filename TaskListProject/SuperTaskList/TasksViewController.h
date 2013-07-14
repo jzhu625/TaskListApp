@@ -11,6 +11,7 @@
 #import "QCCustomCell.h"
 #import "Tasks.h"
 #import "Lists.h"
+#import "EditTaskViewController.h"
 
 
 

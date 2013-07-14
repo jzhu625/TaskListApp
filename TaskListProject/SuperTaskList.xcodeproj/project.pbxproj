@@ -59,8 +59,8 @@
 		7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */; };
 		7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */; };
 		DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF41791EDAE001224EA /* CategoryViewController.m */; };
-		DB8DA83817933F7B0084C91C /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8DA83717933F7B0084C91C /* Tasks.m */; };
-		DB8DA83B17933F7B0084C91C /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8DA83A17933F7B0084C91C /* Lists.m */; };
+		DB8DA83E17934BAC0084C91C /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8DA83D17934BAC0084C91C /* Tasks.m */; };
+		DB8DA84117934BAC0084C91C /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8DA84017934BAC0084C91C /* Lists.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,10 +155,10 @@
 		7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxchecked.jpeg; path = ../checkboxchecked.jpeg; sourceTree = "<group>"; };
 		DB30CCF31791EDAE001224EA /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		DB30CCF41791EDAE001224EA /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
-		DB8DA83617933F7B0084C91C /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
-		DB8DA83717933F7B0084C91C /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
-		DB8DA83917933F7B0084C91C /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
-		DB8DA83A17933F7B0084C91C /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
+		DB8DA83C17934BAC0084C91C /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
+		DB8DA83D17934BAC0084C91C /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
+		DB8DA83F17934BAC0084C91C /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
+		DB8DA84017934BAC0084C91C /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,10 +245,10 @@
 			isa = PBXGroup;
 			children = (
 				3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */,
-				DB8DA83917933F7B0084C91C /* Lists.h */,
-				DB8DA83A17933F7B0084C91C /* Lists.m */,
-				DB8DA83617933F7B0084C91C /* Tasks.h */,
-				DB8DA83717933F7B0084C91C /* Tasks.m */,
+				DB8DA83F17934BAC0084C91C /* Lists.h */,
+				DB8DA84017934BAC0084C91C /* Lists.m */,
+				DB8DA83C17934BAC0084C91C /* Tasks.h */,
+				DB8DA83D17934BAC0084C91C /* Tasks.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -551,8 +551,8 @@
 				6FA94E80178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */,
 				DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */,
-				DB8DA83817933F7B0084C91C /* Tasks.m in Sources */,
-				DB8DA83B17933F7B0084C91C /* Lists.m in Sources */,
+				DB8DA83E17934BAC0084C91C /* Tasks.m in Sources */,
+				DB8DA84117934BAC0084C91C /* Lists.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
