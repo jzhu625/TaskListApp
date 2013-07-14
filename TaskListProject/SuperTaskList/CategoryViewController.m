@@ -111,4 +111,6 @@
      */
 }
 
+- (IBAction)addNewCategoryButtonPressed:(UIButton *)sender {
+}
 @end
