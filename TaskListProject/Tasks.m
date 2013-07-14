@@ -2,7 +2,7 @@
 //  Tasks.m
 //  SuperTaskList
 //
-//  Created by Donysa Vacharasanee on 7/13/13.
+//  Created by Angelica Contero on 7/14/13.
 //  Copyright (c) 2013 self.edu. All rights reserved.
 //
 
@@ -13,8 +13,8 @@
 @implementation Tasks
 
 @dynamic duedate;
-@dynamic taskdescription;
 @dynamic reminder;
+@dynamic taskdescription;
 @dynamic taskTitle;
 @dynamic list;
 

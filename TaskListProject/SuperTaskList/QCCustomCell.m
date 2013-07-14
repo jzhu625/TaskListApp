@@ -75,7 +75,7 @@
          [checkBoxButton setImage: [UIImage imageNamed:@"checkboxcecked.jpeg"] forState:UIControlStateNormal];
         checked = NO;
         
-    }
+    }   
 }
 
 @end
