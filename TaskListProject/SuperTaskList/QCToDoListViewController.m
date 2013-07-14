@@ -30,7 +30,7 @@
     // Do any additional setup after loading the view from its nib.
     
     
-    self.addNewTask.delegate=self;
+   
     self.toDueList.delegate=self;
     self.listsTableView.delegate=self;
     self.listsTableView.dataSource=self;
@@ -103,6 +103,9 @@
     }
     cell.textLabel.text = [[self.listsArray objectAtIndex:indexPath.row] nameTitle];
     
+    
+    
+    
 //    if (indexPath.row > 0 ){
 //        NSLog(@"wierd logic");}
 //        
@@ -156,12 +159,35 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    
+    TasksViewController *TasksVC = [[TasksViewController alloc]initWithNibName:nil bundle:nil];
+    TasksVC.currentList=[self.listsArray objectAtIndex:indexPath.row];
+    
+    [self.navigationController pushViewController:TasksVC animated:YES ];
+    
+    
     // [self.navigationController pushViewController:secondVC animated:YES];
     
     
 }
 
-
+-(void)tableView:(UITableView*)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+}
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+       // If row is deleted, remove it from the list.
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        NSInteger row = [indexPath row];
+     //[listsArray removeObjectAtIndex:row];
+        
+//        [tableView deleteRowsAtIndexPaths:listsArray withRowAnimation:UITableViewRowAnimationFade];
+        
+         [tableView reloadData];
+    }
+}
 
 
 
@@ -177,7 +203,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"return button pressed");
     [self.toDueList resignFirstResponder];
-    [self.addNewTask resignFirstResponder];
+   
     return YES;
 }
 - (IBAction)addListButtonPressed:(id)sender
@@ -193,12 +219,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
     
 }
-- (IBAction)addTaskButtonPressed:(id)sender
-{
-    TasksViewController *TasksVC = [[TasksViewController alloc]initWithNibName:nil bundle:nil];
-    [self.navigationController pushViewController:TasksVC animated:YES ];
-    
-}
+
 
 
 

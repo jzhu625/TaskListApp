@@ -14,17 +14,11 @@
 
 @interface QCToDoListViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UIButton *addTaskButton;
-
-
-- (IBAction)addTaskButtonPressed:(id)sender;
-
 
 @property (strong, nonatomic) IBOutlet UIButton *addListButton;
 
 - (IBAction)addListButtonPressed:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UITextField *addNewTask;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *toDueList;

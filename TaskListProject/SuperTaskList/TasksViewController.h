@@ -19,6 +19,7 @@
 - (IBAction)addTaskButtonPressed:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UIButton *addTaskButton;
 @property (strong, nonatomic) IBOutlet UITextField *textLabel;
+@property (strong, nonatomic) Lists *currentList;
 
 
 
