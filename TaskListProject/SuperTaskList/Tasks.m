@@ -14,7 +14,11 @@
 
 @dynamic duedate;
 @dynamic reminder;
+<<<<<<< HEAD
 @dynamic taskdescription;
+=======
+@dynamic taskTitle;
+>>>>>>> 98bb488b2794dc5249309e9e8c5656162f4c01ad
 @dynamic list;
 
 @end
