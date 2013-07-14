@@ -16,10 +16,11 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    self = [super initWithStyle:style reuseIdentifier:@"checkboxCell"];
     if (self) {
         // Initialization code
     }
+    checked = NO;
     return self;
 }
 
@@ -30,9 +31,9 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)checkboxButton:(UIButton *)sender
 
-{
+
+
     
 //   // UIButton *checkBox; and BOOL checkBoxSelected;
 //    //_checkBox = [[UIButton alloc] initWithFrame:CGRectMake(x,y,20,20)
@@ -59,20 +60,25 @@
 //        [checkbox setSelected:checkboxSelected];
 //    }
     
-    checked = NO;
+ 
     
-}
+
                       
 - (IBAction)checkBoxButton:(id)sender {
-    
+    NSLog(@"checkBox is called");
     if (!checked) {
-        [checkBoxButton setImage: [UIImage imageNamed:@"checkboxblack.jpeg"] forState:UIControlStateNormal];
+        NSLog(@"checkbox has been pressed and is not checked");
+        [checkBoxButton setImage: [UIImage imageNamed:@"checkboxchecked.jpeg"] forState:UIControlStateNormal];
+        NSLog(@"checked image was set");
          checked = YES;
     
-             
+        
          }
     else if (checked) {
-         [checkBoxButton setImage: [UIImage imageNamed:@"checkboxcecked.jpeg"] forState:UIControlStateNormal];
+        NSLog(@"checkbox has been pressed and is checked");
+                [checkBoxButton setImage: [UIImage imageNamed:@"checkboxblank.jpeg"] forState:UIControlStateNormal];
+
+        NSLog(@"blank image was set");
         checked = NO;
         
     }   

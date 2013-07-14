@@ -16,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *checkBoxButton;
 
 - (IBAction)checkBoxButton:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *taskTextLabel;
     
     
     

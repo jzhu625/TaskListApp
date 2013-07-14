@@ -49,7 +49,6 @@
 		6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E65178DB0B400BE7EB7 /* MagicalRecord.m */; };
 		7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F094656178CD58700E16AB2 /* Storyboard.storyboard */; };
 		7F48B82E17714007008BC001 /* QCCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48B82D17714007008BC001 /* QCCustomCell.m */; };
-		7F48B83017714032008BC001 /* QCCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F48B82F17714032008BC001 /* QCCustomCell.xib */; };
 		7FA04C60177F949A00D7719F /* QCToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */; };
 		7FA04C61177F949A00D7719F /* QCToDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA04C5F177F949A00D7719F /* QCToDoListViewController.xib */; };
 		7FA04C65177FD2EA00D7719F /* QCToDoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04C64177FD2EA00D7719F /* QCToDoCell.m */; };
@@ -141,7 +140,6 @@
 		7F094656178CD58700E16AB2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = SuperTaskList/Storyboard.storyboard; sourceTree = "<group>"; };
 		7F48B82C17714007008BC001 /* QCCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCustomCell.h; sourceTree = "<group>"; };
 		7F48B82D17714007008BC001 /* QCCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCustomCell.m; sourceTree = "<group>"; };
-		7F48B82F17714032008BC001 /* QCCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QCCustomCell.xib; sourceTree = "<group>"; };
 		7FA04C5D177F949A00D7719F /* QCToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCToDoListViewController.h; sourceTree = "<group>"; };
 		7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCToDoListViewController.m; sourceTree = "<group>"; };
 		7FA04C5F177F949A00D7719F /* QCToDoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QCToDoListViewController.xib; sourceTree = "<group>"; };
@@ -222,6 +220,7 @@
 				7FC0CA2E17764D5C00220AF9 /* Settings */,
 				3351A794176E3D85006AFF83 /* Model */,
 				7FA04C62177F94D900D7719F /* To Do List View */,
+				7F48B8311771404A008BC001 /* CustomCell */,
 			);
 			path = SuperTaskList;
 			sourceTree = "<group>";
@@ -258,7 +257,6 @@
 			children = (
 				3351A871176E489F006AFF83 /* EditTaskViewController.h */,
 				3351A872176E48A0006AFF83 /* EditTaskViewController.m */,
-				7F48B8311771404A008BC001 /* CustomCell */,
 			);
 			name = "Edit Task View Controller";
 			sourceTree = "<group>";
@@ -387,9 +385,11 @@
 		7F48B8311771404A008BC001 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				7FA04C63177FD2EA00D7719F /* QCToDoCell.h */,
+				7FA04C64177FD2EA00D7719F /* QCToDoCell.m */,
+				7FA04C66177FD35800D7719F /* QCToDoCell.xib */,
 				7F48B82C17714007008BC001 /* QCCustomCell.h */,
 				7F48B82D17714007008BC001 /* QCCustomCell.m */,
-				7F48B82F17714032008BC001 /* QCCustomCell.xib */,
 			);
 			name = CustomCell;
 			sourceTree = "<group>";
@@ -400,19 +400,8 @@
 				7FA04C5D177F949A00D7719F /* QCToDoListViewController.h */,
 				7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */,
 				7FA04C5F177F949A00D7719F /* QCToDoListViewController.xib */,
-				7FA04C68177FD36400D7719F /* To Do Custom Cell */,
-				7FA04C63177FD2EA00D7719F /* QCToDoCell.h */,
-				7FA04C64177FD2EA00D7719F /* QCToDoCell.m */,
-				7FA04C66177FD35800D7719F /* QCToDoCell.xib */,
 			);
 			name = "To Do List View";
-			sourceTree = "<group>";
-		};
-		7FA04C68177FD36400D7719F /* To Do Custom Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "To Do Custom Cell";
 			sourceTree = "<group>";
 		};
 		7FC0CA2E17764D5C00220AF9 /* Settings */ = {
@@ -498,7 +487,6 @@
 				3351A5DE176E3951006AFF83 /* Default@2x.png in Resources */,
 				3351A5E0176E3951006AFF83 /* Default-568h@2x.png in Resources */,
 				3351A5E6176E3951006AFF83 /* SubtasksListViewController.xib in Resources */,
-				7F48B83017714032008BC001 /* QCCustomCell.xib in Resources */,
 				7FC0CA3317764D7700220AF9 /* QCSettingsViewController.xib in Resources */,
 				7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */,
 				7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */,
