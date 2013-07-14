@@ -34,12 +34,12 @@
     self.toDueList.delegate=self;
     self.listsTableView.delegate=self;
     self.listsTableView.dataSource=self;
-    self.listsArray = [[NSMutableArray alloc]init];
+    self.listsArray = [[NSArray alloc] init];
     
     
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:firstTimeUser]){
-        [self createDefaultList];
-    }
+//    if (![[NSUserDefaults standardUserDefaults] boolForKey:firstTimeUser]){
+//        [self createDefaultList];
+//    }
     
     
     
@@ -53,8 +53,14 @@
     
 //    self.listsArray = [[NSMutableArray alloc] initWithArray:[Lists findAll]];
     self.listsArray = [Lists findAll];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    BOOL isNotFirstTimeUser = [userDefaults boolForKey:firstTimeUser];
+    
+    if (!isNotFirstTimeUser) {
+        [self createDefaultList];
+    }
 
-    //[self.listsTableView reloadData];
+    [self.listsTableView reloadData];
     
     
 }
@@ -69,7 +75,10 @@
     self.listsArray = [Lists findAll];
 
     [self.listsTableView reloadData];
-    [[NSUserDefaults standardUserDefaults] setObject:@"done" forKey:firstTimeUser];
+    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+
+    [standardUserDefaults setBool:YES forKey:firstTimeUser];
+    [standardUserDefaults synchronize];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -91,7 +100,12 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     }
-    cell.textLabel.text = [[self.listsArray objectAtIndex:indexPath.row] nameTitle];
+    
+    Lists  * list = self.listsArray[indexPath.row];
+    NSLog(@"**** %i %@", indexPath.row, list);
+    NSLog(@"%@", list.nameTitle);
+//    cell.textLabel.text = [list nameTitle];
+    
     
 //    if (indexPath.row > 0 ){
 //        NSLog(@"wierd logic");}
