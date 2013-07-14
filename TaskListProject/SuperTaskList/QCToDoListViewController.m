@@ -54,7 +54,7 @@
 //    self.listsArray = [[NSMutableArray alloc] initWithArray:[Lists findAll]];
     self.listsArray = [Lists findAll];
 
-    [self.listsTableView reloadData];
+    //[self.listsTableView reloadData];
     
     
 }
