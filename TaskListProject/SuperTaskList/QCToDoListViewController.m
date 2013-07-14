@@ -61,10 +61,7 @@
     }
 
     [self.listsTableView reloadData];
-    
-    
 }
-
 -(void)createDefaultList{
     
     Lists *mylist = [Lists createEntity];
@@ -171,6 +168,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -179,17 +181,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     [self.addNewTask resignFirstResponder];
     return YES;
 }
-
-
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 - (IBAction)addListButtonPressed:(id)sender
 {
     
@@ -205,8 +196,14 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 }
 - (IBAction)addTaskButtonPressed:(id)sender
 {
-    
-    
+    TasksViewController *TasksVC = [[TasksViewController alloc]initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:TasksVC animated:YES ];
     
 }
+
+
+
+
+
+
 @end
