@@ -35,7 +35,7 @@
     
     
     
-   self.navigationItem.title = @"New Task";
+   self.navigationItem.title = @"Edit Task";
    self.navigationItem.rightBarButtonItem.title = @"Save";
     
 }
