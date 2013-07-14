@@ -10,5 +10,8 @@
 #import "EditTaskViewController.h"
 
 @interface CategoryViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UIButton *addNewCategoryButton;
+- (IBAction)addNewCategoryButtonPressed:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UITextField *enterNewCategoryTextField;
 
 @end

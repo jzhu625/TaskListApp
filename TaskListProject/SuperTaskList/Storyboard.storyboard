@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="S3h-HL-6Yw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="S3h-HL-6Yw">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="4rp-rf-c0p" customClass="QCToDoListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UZo-kM-6Tk">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xHh-x2-qlD">
@@ -437,14 +437,17 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addNewCategoryButtonPressed:" destination="FyN-j0-6gM" eventType="touchUpInside" id="VCD-nC-0JG"/>
+                                </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Eb-Ix-NVe">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DSF-NY-Y7X">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="375" id="nMb-I5-13C"/>
+                                    <constraint firstAttribute="height" constant="375" id="EhJ-Fc-IGk"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="jof-1L-E52">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="lw6-DY-g42">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -453,7 +456,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="ChJ-YK-qh2">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="p49-d8-0fF">
                                         <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -466,23 +469,27 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Eb-Ix-NVe" firstAttribute="top" secondItem="4gA-Bm-Fmg" secondAttribute="top" type="default" id="08a-fq-E7d"/>
+                            <constraint firstItem="9RJ-8h-bcM" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" constant="5" id="9jU-BC-io2"/>
                             <constraint firstItem="okb-Gb-GVA" firstAttribute="baseline" secondItem="9RJ-8h-bcM" secondAttribute="baseline" type="default" id="FiV-Bg-8vS"/>
-                            <constraint firstItem="3Eb-Ix-NVe" firstAttribute="trailing" secondItem="4gA-Bm-Fmg" secondAttribute="trailing" type="default" id="IOD-FN-JnX"/>
-                            <constraint firstAttribute="bottom" secondItem="9RJ-8h-bcM" secondAttribute="bottom" constant="80" id="Kqk-5Z-M4s"/>
-                            <constraint firstItem="9RJ-8h-bcM" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" constant="6" id="ZFe-gm-30V"/>
-                            <constraint firstItem="3Eb-Ix-NVe" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" type="default" id="ZJ3-hT-YBq"/>
-                            <constraint firstItem="okb-Gb-GVA" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" constant="103" id="c8J-VU-XTg"/>
-                            <constraint firstItem="9RJ-8h-bcM" firstAttribute="top" secondItem="okb-Gb-GVA" secondAttribute="top" type="default" id="xd9-FQ-O4n"/>
+                            <constraint firstItem="DSF-NY-Y7X" firstAttribute="trailing" secondItem="4gA-Bm-Fmg" secondAttribute="trailing" type="default" id="IXL-MR-leZ"/>
+                            <constraint firstItem="DSF-NY-Y7X" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" type="default" id="Nq7-AH-fUe"/>
+                            <constraint firstItem="DSF-NY-Y7X" firstAttribute="top" secondItem="4gA-Bm-Fmg" secondAttribute="top" constant="69" id="qcc-zH-hO3"/>
+                            <constraint firstItem="okb-Gb-GVA" firstAttribute="leading" secondItem="4gA-Bm-Fmg" secondAttribute="leading" constant="108" id="wF0-TO-l82"/>
+                            <constraint firstItem="9RJ-8h-bcM" firstAttribute="top" secondItem="4gA-Bm-Fmg" secondAttribute="top" constant="20" symbolic="YES" type="default" id="xUW-fR-45e"/>
+                            <constraint firstItem="okb-Gb-GVA" firstAttribute="top" secondItem="4gA-Bm-Fmg" secondAttribute="top" constant="21" id="zvP-gz-4Uu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="tlT-Ej-cba">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="BbH-fe-OBH"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addNewCategoryButton" destination="9RJ-8h-bcM" id="Dh8-1f-nPM"/>
+                        <outlet property="enterNewCategoryTextField" destination="okb-Gb-GVA" id="8xk-HD-PsK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZW-xU-b0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2194" y="-30"/>
+            <point key="canvasLocation" x="1767" y="-156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mlQ-s5-qhY">
@@ -495,7 +502,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4rp-rf-c0p" kind="relationship" relationship="rootViewController" id="lDJ-la-byp"/>
+                        <segue destination="uJN-bm-etm" kind="relationship" relationship="rootViewController" id="vMn-X7-5be"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90M-cp-2Tt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -535,7 +542,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <!--2013-07-13 18:45:05 +0000-->
                                 </date>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
-                                    <mutableData key="data">
+                                    <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -553,7 +560,7 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                 </timeZone>
                             </datePicker>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dP7-31-YiA">
@@ -605,9 +612,64 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     <resources>
         <image name="checkboxblank.jpeg" width="225" height="225"/>
     </resources>
+    <classes>
+        <class className="CategoryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CategoryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addNewCategoryButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="addNewCategoryButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="enterNewCategoryTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="EditTaskViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditTaskViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dueDateCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="reminderCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="taskCategoryCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="taskDescriptionTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="QCToDoListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QCToDoListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addListButtonPressed:"/>
+                <relationship kind="action" name="addTaskButtonPressed:"/>
+                <relationship kind="outlet" name="addListButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="addNewTask" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="addTaskButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="listsTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="toDueList" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="QCViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QCViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="chooseDate:"/>
+                <relationship kind="action" name="pickDate:"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myPicker" candidateClass="UIDatePicker"/>
+            </relationships>
+        </class>
+        <class className="TasksViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TasksViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addTaskButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="addTaskButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="taskTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="textLabel" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="vMn-X7-5be"/>
+    </inferredMetricsTieBreakers>
 </document>

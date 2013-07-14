@@ -21,7 +21,6 @@
 		3351A5ED176E3983006AFF83 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3351A5EC176E3983006AFF83 /* CoreData.framework */; };
 		3351A793176E3D7A006AFF83 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */; };
 		3351A874176E48A0006AFF83 /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351A872176E48A0006AFF83 /* EditTaskViewController.m */; };
-		3B82418017934D2B00D4A4CA /* QCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B82417E17934D2B00D4A4CA /* QCViewController.m */; };
 		6FA94E68178DB0B400BE7EB7 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E30178DB0B400BE7EB7 /* MagicalImportFunctions.m */; };
 		6FA94E69178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E32178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.m */; };
 		6FA94E6A178DB0B400BE7EB7 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E34178DB0B400BE7EB7 /* NSEntityDescription+MagicalDataImport.m */; };
@@ -60,8 +59,8 @@
 		7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */; };
 		7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */; };
 		DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF41791EDAE001224EA /* CategoryViewController.m */; };
-		FDE6B27E1793016C00C552EE /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE6B27D1793016C00C552EE /* Lists.m */; };
-		FDE6B2811793016C00C552EE /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE6B2801793016C00C552EE /* Tasks.m */; };
+		FDE6B28417935B8000C552EE /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE6B28317935B8000C552EE /* Tasks.m */; };
+		FDE6B28717935B8100C552EE /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE6B28617935B8100C552EE /* Lists.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,10 +157,10 @@
 		7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxchecked.jpeg; path = ../checkboxchecked.jpeg; sourceTree = "<group>"; };
 		DB30CCF31791EDAE001224EA /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		DB30CCF41791EDAE001224EA /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
-		FDE6B27C1793016C00C552EE /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lists.h; path = ../Lists.h; sourceTree = "<group>"; };
-		FDE6B27D1793016C00C552EE /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lists.m; path = ../Lists.m; sourceTree = "<group>"; };
-		FDE6B27F1793016C00C552EE /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tasks.h; path = ../Tasks.h; sourceTree = "<group>"; };
-		FDE6B2801793016C00C552EE /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tasks.m; path = ../Tasks.m; sourceTree = "<group>"; };
+		FDE6B28217935B8000C552EE /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
+		FDE6B28317935B8000C552EE /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
+		FDE6B28517935B8100C552EE /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
+		FDE6B28617935B8100C552EE /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,10 +248,10 @@
 			isa = PBXGroup;
 			children = (
 				3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */,
-				FDE6B27F1793016C00C552EE /* Tasks.h */,
-				FDE6B2801793016C00C552EE /* Tasks.m */,
-				FDE6B27C1793016C00C552EE /* Lists.h */,
-				FDE6B27D1793016C00C552EE /* Lists.m */,
+				FDE6B28517935B8100C552EE /* Lists.h */,
+				FDE6B28617935B8100C552EE /* Lists.m */,
+				FDE6B28217935B8000C552EE /* Tasks.h */,
+				FDE6B28317935B8000C552EE /* Tasks.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -564,9 +563,8 @@
 				6FA94E80178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */,
 				DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */,
-				FDE6B27E1793016C00C552EE /* Lists.m in Sources */,
-				FDE6B2811793016C00C552EE /* Tasks.m in Sources */,
-				3B82418017934D2B00D4A4CA /* QCViewController.m in Sources */,
+				FDE6B28417935B8000C552EE /* Tasks.m in Sources */,
+				FDE6B28717935B8100C552EE /* Lists.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
