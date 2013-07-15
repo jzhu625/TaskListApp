@@ -29,14 +29,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
    
     self.toDueList.delegate=self;
     self.listsTableView.delegate=self;
     self.listsTableView.dataSource=self;
-    self.listsArray = [[NSArray alloc]init];
+    self.listsArray = [[NSArray alloc] init];
     
-//    
+    
 //    if (![[NSUserDefaults standardUserDefaults] boolForKey:firstTimeUser]){
 //        [self createDefaultList];
 //    }
@@ -52,19 +52,16 @@
     
     
 //    self.listsArray = [[NSMutableArray alloc] initWithArray:[Lists findAll]];
-    self.listsArray = [Lists findAll];
-
-    
+    self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    
     BOOL isNotFirstTimeUser = [userDefaults boolForKey:firstTimeUser];
     
-    if (!isNotFirstTimeUser){
+    if (!isNotFirstTimeUser) {
         [self createDefaultList];
     }
+
     [self.listsTableView reloadData];
 }
-
 -(void)createDefaultList{
     
     Lists *mylist = [Lists createEntity];
@@ -72,14 +69,13 @@
     
     [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
 
-    self.listsArray = [Lists findAll];
+    self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
 
     [self.listsTableView reloadData];
     NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
 
     [standardUserDefaults setBool:YES forKey:firstTimeUser];
     [standardUserDefaults synchronize];
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -101,7 +97,12 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     }
-    cell.textLabel.text = [[self.listsArray objectAtIndex:indexPath.row] nameTitle];
+    
+    Lists  * list = self.listsArray[indexPath.row];
+    NSLog(@"**** %i %@", indexPath.row, list);
+    NSLog(@"%@", list.nameTitle);
+    cell.textLabel.text = [list nameTitle];
+    
     
     
     
@@ -156,41 +157,48 @@
 -(void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"didSelectRowAtIndexPath");
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    
-    TasksViewController *TasksVC = [[TasksViewController alloc]initWithNibName:nil bundle:nil];
+    TasksViewController *TasksVC = [self.storyboard instantiateViewControllerWithIdentifier:@"taskViewControllerUI"];
     TasksVC.currentList=[self.listsArray objectAtIndex:indexPath.row];
     
     [self.navigationController pushViewController:TasksVC animated:YES ];
     
     
     // [self.navigationController pushViewController:secondVC animated:YES];
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
     
 }
 
 -(void)tableView:(UITableView*)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+
+
+    
+    
 }
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
-       // If row is deleted, remove it from the list.
+        // If row is deleted, remove it from the list.
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
-        NSInteger row = [indexPath row];
-     //[listsArray removeObjectAtIndex:row];
-        
-//        [tableView deleteRowsAtIndexPaths:listsArray withRowAnimation:UITableViewRowAnimationFade];
-        
+      
+        Lists *listToBeDeleted = self.listsArray[indexPath.row];        
+//        [listToBeDeleted MR_deleteInContext:[NSManagedObjectContext MR_contextForCurrentThread]];
+//         [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
+        [listToBeDeleted MR_deleteEntity];
+        self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
          [tableView reloadData];
     }
+
 }
 
-
-
+-(void) setEditing:(BOOL)editing animated:(BOOL)animated{
+    [super setEditing:editing animated:animated];
+    [self.listsTableView setEditing:editing animated:animated];
+    
+}
 
 
 - (void)didReceiveMemoryWarning
@@ -199,24 +207,33 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    clearField = YES;
+}
+
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     NSLog(@"return button pressed");
     [self.toDueList resignFirstResponder];
    
     return YES;
+    
 }
+
+
 - (IBAction)addListButtonPressed:(id)sender
 {
-    
+    NSLog(@"addListButtonPressed");
     Lists *mylist = [Lists createEntity];
     mylist.nameTitle= self.toDueList.text;
     [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
 
-    self.listsArray = [Lists findAll];
+    self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];;
     
     [self.listsTableView reloadData];
-    
+    NSLog(@"reloaded and added list %@",mylist.nameTitle);
     
 }
 

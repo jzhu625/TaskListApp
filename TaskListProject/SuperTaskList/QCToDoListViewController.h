@@ -12,6 +12,9 @@
 #import "TasksViewController.h"
 #import "QCAppDelegate.h"
 
+
+BOOL clearField;
+
 @interface QCToDoListViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
 
 
@@ -25,7 +28,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *listsTableView;
 //@property (strong, nonatomic) NSMutableArray *listsArray;
 @property (strong, nonatomic) NSArray *listsArray;
-
 
 
 @end
