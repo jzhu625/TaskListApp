@@ -13,8 +13,8 @@
 
 @interface Tasks : NSManagedObject
 
-@property (nonatomic, retain) NSDate * duedate;
-@property (nonatomic, retain) NSDate * reminder;
+@property (nonatomic) NSTimeInterval duedate;
+@property (nonatomic) NSTimeInterval reminder;
 @property (nonatomic, retain) NSString * taskdescription;
 @property (nonatomic, retain) NSString * taskTitle;
 @property (nonatomic, retain) Lists *list;
