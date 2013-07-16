@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330784CA1794D7CE0098C4AB /* QCCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 330784C81794D7CE0098C4AB /* QCCustomCell.m */; };
+		330784CB1794D7CE0098C4AB /* QCCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330784C91794D7CE0098C4AB /* QCCustomCell.xib */; };
 		3351A5CA176E3951006AFF83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3351A5C9176E3951006AFF83 /* UIKit.framework */; };
 		3351A5CC176E3951006AFF83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3351A5CB176E3951006AFF83 /* Foundation.framework */; };
 		3351A5CE176E3951006AFF83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3351A5CD176E3951006AFF83 /* CoreGraphics.framework */; };
@@ -47,7 +49,6 @@
 		6FA94E80178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E63178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m */; };
 		6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E65178DB0B400BE7EB7 /* MagicalRecord.m */; };
 		7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F094656178CD58700E16AB2 /* Storyboard.storyboard */; };
-		7F48B82E17714007008BC001 /* QCCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48B82D17714007008BC001 /* QCCustomCell.m */; };
 		7F2DE9A21793656A00F05BB8 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DE9A11793656A00F05BB8 /* Tasks.m */; };
 		7F2DE9A51793656B00F05BB8 /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DE9A41793656B00F05BB8 /* Lists.m */; };
 		7FA04C60177F949A00D7719F /* QCToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */; };
@@ -58,6 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330784C71794D7CE0098C4AB /* QCCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCCustomCell.h; path = SuperTaskList/QCCustomCell.h; sourceTree = "<group>"; };
+		330784C81794D7CE0098C4AB /* QCCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCCustomCell.m; path = SuperTaskList/QCCustomCell.m; sourceTree = "<group>"; };
+		330784C91794D7CE0098C4AB /* QCCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QCCustomCell.xib; path = SuperTaskList/QCCustomCell.xib; sourceTree = "<group>"; };
 		3351A5C6176E3951006AFF83 /* SuperTaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperTaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3351A5C9176E3951006AFF83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3351A5CB176E3951006AFF83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,8 +138,6 @@
 		6FA94E66178DB0B400BE7EB7 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		6FA94E67178DB0B400BE7EB7 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		7F094656178CD58700E16AB2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = SuperTaskList/Storyboard.storyboard; sourceTree = "<group>"; };
-		7F48B82C17714007008BC001 /* QCCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCustomCell.h; sourceTree = "<group>"; };
-		7F48B82D17714007008BC001 /* QCCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCustomCell.m; sourceTree = "<group>"; };
 		7F2DE9A01793656A00F05BB8 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
 		7F2DE9A11793656A00F05BB8 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
 		7F2DE9A31793656B00F05BB8 /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
@@ -165,6 +167,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330784CC1794D81B0098C4AB /* QCCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				330784C71794D7CE0098C4AB /* QCCustomCell.h */,
+				330784C81794D7CE0098C4AB /* QCCustomCell.m */,
+				330784C91794D7CE0098C4AB /* QCCustomCell.xib */,
+			);
+			name = QCCustomCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		3351A5BD176E3951006AFF83 = {
 			isa = PBXGroup;
 			children = (
@@ -210,11 +223,9 @@
 				7FC0CA2E17764D5C00220AF9 /* Settings */,
 				3351A794176E3D85006AFF83 /* Model */,
 				7FA04C62177F94D900D7719F /* To Do List View */,
-
+				330784CC1794D81B0098C4AB /* QCCustomCell */,
 				7F48B8311771404A008BC001 /* CustomCell */,
-
 				3B82417D17934C9900D4A4CA /* DatePicker */,
-
 			);
 			path = SuperTaskList;
 			sourceTree = "<group>";
@@ -388,11 +399,6 @@
 		7F48B8311771404A008BC001 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				7FA04C63177FD2EA00D7719F /* QCToDoCell.h */,
-				7FA04C64177FD2EA00D7719F /* QCToDoCell.m */,
-				7FA04C66177FD35800D7719F /* QCToDoCell.xib */,
-				7F48B82C17714007008BC001 /* QCCustomCell.h */,
-				7F48B82D17714007008BC001 /* QCCustomCell.m */,
 			);
 			name = CustomCell;
 			sourceTree = "<group>";
@@ -490,6 +496,7 @@
 				7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */,
 				7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */,
 				7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */,
+				330784CB1794D7CE0098C4AB /* QCCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +543,7 @@
 				DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */,
 				7F2DE9A21793656A00F05BB8 /* Tasks.m in Sources */,
 				7F2DE9A51793656B00F05BB8 /* Lists.m in Sources */,
+				330784CA1794D7CE0098C4AB /* QCCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

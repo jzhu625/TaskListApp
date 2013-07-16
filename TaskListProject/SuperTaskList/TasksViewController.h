@@ -11,7 +11,7 @@
 #import "Tasks.h"
 #import "Lists.h"
 #import "EditTaskViewController.h"
-
+#import "QCCustomCell.h"
 
 
 @interface TasksViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
@@ -23,6 +23,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *textLabel;
 @property (strong, nonatomic) Lists *currentList;
 
+@property (strong, nonatomic) IBOutlet UIButton *checkBoxButton;
 
-
+- (IBAction)checkBoxButtonPressed:(id)sender;
 @end

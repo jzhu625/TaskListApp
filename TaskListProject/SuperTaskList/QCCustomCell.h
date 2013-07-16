@@ -1,5 +1,5 @@
 //
-//  QCCustomCell.h
+//  QCTableViewCell.h
 //  SuperTaskList
 //
 //  Created by QL Mac Lab on 6/18/13.
@@ -19,5 +19,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *taskTextLabel;
     
     
+@property (strong, nonatomic) IBOutlet UIButton *checkButton;
+- (IBAction)checkButton:(id)sender;
     
 @end

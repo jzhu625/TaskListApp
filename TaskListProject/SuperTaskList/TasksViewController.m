@@ -76,10 +76,10 @@
     //            UITableViewCell *cell = (UITableViewCell *) [taskTableView dequeueReusableCellWithIdentifier:Cellidentifier];
     //
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    QCCustomCell *cell = [[QCCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+        cell = [[QCCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     }
     
     cell.textLabel.text = [[self.tasksArray objectAtIndex:indexPath.row] taskTitle];
@@ -208,6 +208,9 @@
     [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
     [self.taskTableView reloadData];
 }
+
+
+
 
 
 

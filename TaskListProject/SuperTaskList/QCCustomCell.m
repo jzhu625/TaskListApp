@@ -1,5 +1,5 @@
 //
-//  QCCustomCell.m
+//  QCToDoCell.m
 //  SuperTaskList
 //
 //  Created by QL Mac Lab on 6/18/13.
@@ -84,4 +84,6 @@
     }   
 }
 
+- (IBAction)checkButton:(id)sender {
+}
 @end
